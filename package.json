@@ -1,0 +1,19 @@
+{
+  "name": "ninjafood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "start": "live-server public"
+  },
+  "keywords": [],
+  "author": "Roberto Zaniboni <zaniboni@gmail.com> (http://rzaniboni.github.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "1.4.6"
+  },
+  "devDependencies": {
+    "live-server": "1.2.1"
+  }
+}
