@@ -9,38 +9,45 @@
   <div class="grid md:grid-cols-3">
 
     <!-- content wrapper -->
-    <div class="md:col-span-1">
-      <nav>
-        <div>
+    <div class="md:col-span-1 md:flex md:justify-end">
+      <nav class="text-right">
+        <div class="flex justify-between items-center">
           <h1 class="font-bold uppercase p-4 border-b border-gray-100 text-mammoth">
             <a href="/" class="text-sm md:text-xl hover:text-gray-700">Food Ninja</a>
           </h1>
+          <div class="px-4 cursor-pointer md:hidden" id="burger">
+            <svg class="w-6" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
         </div>
-        <ul>
-          <li class="text-gray-700 font-bold">
-            <a href="#" class="flex">
+        <ul class="text-sm mt-6 hidden md:block" id="menu">
+          <li class="text-gray-700 font-bold py-1">
+            <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
               <span >Home</span>
-              <svg class="w-5" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
                 </path>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="py-1">
+            <a href="#" class="px-4 flex justify-end border-r-4 border-white">
               <span>About</span>
-              <svg class="w-5" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd"
                   d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
                   clip-rule="evenodd"></path>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="py-1">
+            <a href="#" class="px-4 flex justify-end border-r-4 border-white">
               <span>Contact</span>
-              <svg class="w-5" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
               </svg>
@@ -138,12 +145,7 @@
     </main>
   </div>
 
-  <svg class="w-48" fill="currentColor" viewBox="0 0 20 20">
-    <path fill-rule="evenodd"
-      d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
-      clip-rule="evenodd"></path>
-  </svg>
 
-
+  <script src="index.js"></script>
 </body>
 </html>
